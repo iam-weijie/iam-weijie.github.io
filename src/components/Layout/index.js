@@ -1,7 +1,7 @@
-import './index.scss';
+import './index.scss'
 
 const Layout = () => {
-    return <>Hello</>
+  return <>Hello</>
 }
 
 export default Layout
