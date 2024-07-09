@@ -1,15 +1,22 @@
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 
 .home {
+  width: 100%;
   min-height: 100vh;
   background-image: url("images/sea.jpeg");
+  background-size: cover;
+  background-position: center 100%;
   background-attachment: fixed;
+  display: flex;
   font-family: "ICA Rubik";
-  max-width: 100%;
+  color: whitesmoke;
+  overflow: hidden;
 }
 .home .content {
-  color: whitesmoke;
-  font-size: 30px;
+  padding: 20px;
+}
+.home .content .text-1 {
+  font-size: 72px;
 }
 
 .skills .banner {
