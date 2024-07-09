@@ -4,3 +4,5 @@ var typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true,
 });
+
+let sidebar = document.querySelector(".sidebar");

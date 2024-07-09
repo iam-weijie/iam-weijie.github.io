@@ -1,5 +1,59 @@
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 50px;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #181818;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s ease;
+}
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+.sidebar ul li a {
+  color: #fefefa;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+}
+.sidebar ul li a:hover {
+  background-color: #fff;
+  color: #181818;
+}
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+
 .home {
   width: 100%;
   min-height: 100vh;
