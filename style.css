@@ -8,15 +8,30 @@
   background-position: center 100%;
   background-attachment: fixed;
   display: flex;
-  font-family: "ICA Rubik";
-  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  color: #fefefa;
   overflow: hidden;
 }
 .home .content {
   padding: 20px;
+  margin-top: 10%;
+  margin-left: 15%;
+  line-height: 1.2;
 }
 .home .content .text-1 {
-  font-size: 72px;
+  font-size: 60px;
+}
+.home .content .text-2 {
+  font-size: 75px;
+  color: #ffb600;
+  font-weight: 600;
+}
+.home .content .text-3 {
+  font-size: 50px;
+}
+.home .content .text-3 span {
+  color: #ffc000;
+  font-weight: 500;
 }
 
 .skills .banner {
