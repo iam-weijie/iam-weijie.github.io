@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -119,8 +120,41 @@
     <section class="projects" id="projects"></section>
 
     <!-- contact section start -->
-    <section class="contact" id="contact"></section>
-
+    <section class="contact" id="contact">
+      <div>
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+          <!--Name-->
+          <label for="user_name">Name</label>
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            placeholder="Your name..."
+            required
+          />
+          <!--Email-->
+          <label for="user_email">Email</label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <!--Message-->
+          <label for="message">Message</label>
+          <textarea
+            type="message"
+            id="message"
+            placeholder="Your message..."
+            required
+          ></textarea>
+          <!--Submit Button-->
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
