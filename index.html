@@ -5,32 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weijie's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
   <body>
     <!-- home section start -->
-    <section class="home" id="home"></section>
+    <section class="home" id="home">
+      <div class="content">
+        <div class="text-1">Hi there! My name is</div>
+        <div class="text-2">Weijie Wang</div>
+        <div class="text-3">And I'm a <span class="typing"></span></div>
+      </div>
+    </section>
 
     <!-- skills section start -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent 0 100px,
-            #25283b22 100px 101px
-          ),
-          repeating-linear-gradient(
-            to bottom,
-            transparent 0 100px,
-            #25283b22 100px 101px
-          );
-      }
-    </style>
     <section class="skills" id="skills">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          background-color: whitesmoke;
+          background-image: repeating-linear-gradient(
+              to right,
+              transparent 0 100px,
+              #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+              to bottom,
+              transparent 0 100px,
+              #25283b22 100px 101px
+            );
+        }
+      </style>
+
       <div class="banner">
         <div class="slider" style="--quantity: 8">
           <div class="item" style="--position: 8">
@@ -46,13 +55,13 @@
             <img src="images/javascript.png" alt="" />
           </div>
           <div class="item" style="--position: 4">
-            <img src="images/react.png" alt="" />
-          </div>
-          <div class="item" style="--position: 3">
             <img src="images/html.png" alt="" />
           </div>
-          <div class="item" style="--position: 2">
+          <div class="item" style="--position: 3">
             <img src="images/css.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/react.png" alt="" />
           </div>
           <div class="item" style="--position: 1">
             <img src="images/aws.webp" alt="" />
