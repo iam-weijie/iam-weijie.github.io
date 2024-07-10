@@ -171,7 +171,7 @@ html {
   inset: 0 0 0 0;
   content: attr(data-content);
   z-index: 2;
-  -webkit-text-stroke: 5px #181818;
+  -webkit-text-stroke: 4px #181818;
   color: transparent;
 }
 .skills .banner .content .me {
