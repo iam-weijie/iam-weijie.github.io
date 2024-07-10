@@ -253,4 +253,16 @@ html {
   padding: 0.8em;
   background-color: #ff742e;
   color: #fefefa;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.contact button:hover {
+  background-color: #e16628;
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    font-size: 14px;
+  }
 }
