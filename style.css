@@ -121,6 +121,9 @@ html {
   animation: autoRun 20s linear infinite;
   z-index: 2;
 }
+.skills .banner .slider:hover {
+  animation-play-state: paused;
+}
 @keyframes autoRun {
   from {
     /* changing the value in rotateX results in spinning angle */
