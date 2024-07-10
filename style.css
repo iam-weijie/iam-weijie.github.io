@@ -113,7 +113,7 @@ html {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 19%; /* changing the value of top results in vertical position of spinning */
+  top: 15%; /* changing the value of top results in vertical position of spinning */
   left: calc(50% - 100px);
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -123,10 +123,10 @@ html {
 @keyframes autoRun {
   from {
     /* changing the value in rotateX results in spinning angle */
-    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
   }
   to {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
   }
 }
 .skills .banner .slider .item {
@@ -136,7 +136,7 @@ html {
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
     /* changing the value in translateZ results in radius of the spinning circle */
-    translateZ(400px);
+    translateZ(480px);
 }
 .skills .banner .slider .item img {
   width: 100%;
@@ -150,7 +150,6 @@ html {
   transform: translateX(-50%);
   width: min(1400px, 100vw);
   height: max-content;
-  padding-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -159,11 +158,12 @@ html {
 }
 .skills .banner .content h1 {
   font-family: "ICA Rubrik";
-  font-size: 15em;
+  font-size: 13em;
   line-height: 1em;
   color: #181818;
   position: relative;
-  margin-left: 10%;
+  margin-left: 15%;
+  margin-bottom: 1%;
 }
 .skills .banner .content h1::after {
   position: absolute;
@@ -176,11 +176,11 @@ html {
 .skills .banner .content .me {
   background-image: url("images/me2.png");
   width: 100%;
-  height: 80vh;
+  height: 81vh;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 0;
-  background-size: auto 100%;
+  background-size: auto 130%;
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 1;
