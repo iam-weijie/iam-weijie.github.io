@@ -32,6 +32,7 @@ html {
   width: 90%;
   margin: 0.8rem auto;
   line-height: 50px;
+  top: 30px;
 }
 .sidebar ul li a {
   font-size: 30px;
@@ -114,7 +115,7 @@ html {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 15%; /* changing the value of top results in vertical position of spinning */
+  top: 13%; /* changing the value of top results in vertical position of spinning */
   left: calc(50% - 100px);
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -127,10 +128,10 @@ html {
 @keyframes autoRun {
   from {
     /* changing the value in rotateX results in spinning angle */
-    transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
   }
   to {
-    transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
   }
 }
 .skills .banner .slider .item {
