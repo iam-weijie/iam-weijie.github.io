@@ -212,6 +212,7 @@ html {
 }
 .contact h1 {
   font-size: 2.5em;
+  color: #181818;
 }
 .contact form {
   display: flex;
@@ -259,6 +260,21 @@ html {
 }
 .contact button:hover {
   background-color: #e16628;
+}
+.contact ul {
+  margin-top: 10%;
+  margin-bottom: -10%;
+  display: flex;
+  justify-content: center;
+}
+.contact ul li {
+  margin: 5%;
+  list-style-type: none;
+  display: inline-block;
+}
+.contact ul li a {
+  color: #181818;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 500px) {
