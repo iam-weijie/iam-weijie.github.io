@@ -488,10 +488,6 @@ a,
   }
 }
 @media screen and (max-width: 768px) {
-  html,
-  body {
-    height: 50vh;
-  }
   #btn {
     display: block;
     color: #fefefa;
@@ -525,7 +521,7 @@ a,
   }
   .main-content {
     width: 100%;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in;
   }
   .main-content.shift-right {
     width: calc(100% - 50px);
@@ -533,6 +529,9 @@ a,
     transition: all 0.5s ease;
   }
 
+  .home {
+    background-size: contain;
+  }
   .home .content .text-1 {
     font-size: 30px;
   }
