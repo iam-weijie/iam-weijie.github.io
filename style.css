@@ -351,6 +351,15 @@ a,
   object-fit: cover;
   border-radius: 10px;
 }
+.projects .thumbnail .item-1 img {
+  object-position: 20%;
+}
+.projects .thumbnail .item-2 img {
+  object-position: 40%;
+}
+.projects .thumbnail .item-3 img {
+  object-position: 28%;
+}
 .projects .thumbnail .item.active {
   filter: brightness(1);
 }
