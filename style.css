@@ -520,16 +520,17 @@ a,
     display: none;
   }
   .main-content {
-    width: calc(100% + 50px);
-    position: left;
-    overflow: hidden;
+    width: 100%;
     transition: all 0.5s ease;
   }
   .main-content.shift-left {
+    width: calc(100% + 50px);
     transform: translateX(-50px);
     transition: all 0.5s ease;
   }
-
+  .skills {
+    margin-left: 50px;
+  }
   .skills .banner .slider {
     width: 100px;
     height: 150px;
@@ -557,5 +558,6 @@ a,
 
   .contact {
     font-size: 14px;
+    margin-left: 50px;
   }
 }
