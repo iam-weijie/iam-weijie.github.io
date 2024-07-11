@@ -11,6 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
+#btn {
+  display: none;
+}
 .logo {
   width: 60px;
   padding: 0.1rem;
@@ -25,6 +28,9 @@ html {
   padding: 0.4rem 0.8rem;
   transition: all 0.5s ease;
   z-index: 100;
+}
+.sidebar.hidden {
+  transform: translateX(-100%);
 }
 .sidebar ul li {
   position: relative;
@@ -452,7 +458,93 @@ a,
   font-size: 30px;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1023px) {
+  .skills .banner .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+  .skills .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
+  }
+  .skills .banner .content h1 {
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 10px 20px #000;
+    font-size: 7em;
+  }
+  .skills .banner .content .author {
+    color: #fff;
+    padding: 20px;
+    text-shadow: 0 10px 20px #000;
+    z-index: 2;
+    max-width: unset;
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #btn {
+    display: block;
+    color: #fefefa;
+    position: fixed;
+    top: 0.4rem;
+    font-size: 1.2rem;
+    left: 4%;
+    line-height: 50px;
+    z-index: 101;
+  }
+  .sidebar .top .logo {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .sidebar {
+    width: 50px;
+  }
+  .sidebar ul li a {
+    font-size: 20px;
+    margin-top: 0;
+    border-radius: 0.5rem;
+  }
+  .sidebar ul li a i {
+    min-width: 0px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .sidebar ul li .tooltip {
+    display: none;
+  }
+  .main-content {
+    width: calc(100% + 50px);
+    position: left;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .main-content.shift-left {
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
+  }
+
+  .skills .banner .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+  }
+  .skills .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
+  }
+  .skills .banner .content h1 {
+    font-size: 5em;
+  }
+
   .projects .thumbnail {
     justify-content: start;
   }

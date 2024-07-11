@@ -7,7 +7,13 @@ var typed = new Typed(".typing", {
 });
 
 // Sidebar
+let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
+let mainContent = document.querySelector(".main-content");
+btn.onclick = function () {
+  sidebar.classList.toggle("hidden");
+  mainContent.classList.toggle("shift-left");
+};
 // Change tooltip color when in the skills section
 document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".sidebar");
