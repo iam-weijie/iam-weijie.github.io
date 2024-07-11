@@ -523,18 +523,14 @@ a,
     width: 100%;
     transition: all 0.5s ease;
   }
-  .main-content.shift-left {
-    width: calc(100% + 50px);
-    transform: translateX(-50px);
+  .main-content.shift-right {
+    width: calc(100% - 50px);
+    transform: translateX(50px);
     transition: all 0.5s ease;
-  }
-  .skills {
-    margin-left: 50px;
   }
   .skills .banner .slider {
     width: 100px;
     height: 150px;
-    left: calc(50% - 50px);
   }
   .skills .banner .slider .item {
     transform: rotateY(
@@ -558,6 +554,5 @@ a,
 
   .contact {
     font-size: 14px;
-    margin-left: 50px;
   }
 }

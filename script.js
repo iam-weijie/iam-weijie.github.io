@@ -10,9 +10,11 @@ var typed = new Typed(".typing", {
 let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
 let mainContent = document.querySelector(".main-content");
+// Sidebar stays hidden when first load
+sidebar.classList.toggle("hidden");
 btn.onclick = function () {
   sidebar.classList.toggle("hidden");
-  mainContent.classList.toggle("shift-left");
+  mainContent.classList.toggle("shift-right");
 };
 // Change tooltip color when in the skills section
 document.addEventListener("DOMContentLoaded", function () {
