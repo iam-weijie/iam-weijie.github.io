@@ -488,6 +488,10 @@ a,
   }
 }
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    height: 50vh;
+  }
   #btn {
     display: block;
     color: #fefefa;
