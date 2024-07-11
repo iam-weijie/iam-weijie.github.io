@@ -61,7 +61,7 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
-  color: #181818;
+  color: #fefefa;
   border-radius: 0.6rem;
   padding: 0.4rem 1.2rem;
   line-height: 1.8rem;
@@ -280,7 +280,7 @@ a,
 }
 .projects .arrows {
   position: absolute;
-  top: 30%;
+  top: 50%;
   right: 50px;
   z-index: 100;
 }
@@ -296,6 +296,26 @@ a,
   transition: 0.5s;
 }
 .projects .arrows button:hover {
+  background-color: #fefefa;
+  color: black;
+}
+.projects .slider .list .item .content button {
+  background-color: #eee5;
+  color: #fefefa;
+  border: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: large;
+  transition: 0.5s;
+  margin-top: 5%;
+  opacity: 0;
+}
+.projects .slider .list .item.active .content button {
+  animation: showContent 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+.projects .slider .list .item .content button:hover {
   background-color: #fefefa;
   color: black;
 }
