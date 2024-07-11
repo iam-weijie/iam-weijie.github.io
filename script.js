@@ -8,6 +8,25 @@ var typed = new Typed(".typing", {
 
 // Sidebar
 let sidebar = document.querySelector(".sidebar");
+// Change tooltip color when in the skills section
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.querySelector(".sidebar");
+  const skillsSection = document.querySelector(".skills");
+
+  window.addEventListener("scroll", function () {
+    const skillsTop = skillsSection.getBoundingClientRect().top;
+    const skillsBottom = skillsSection.getBoundingClientRect().bottom;
+
+    if (
+      skillsTop <= window.innerHeight / 2 &&
+      skillsBottom >= window.innerHeight / 2
+    ) {
+      sidebar.classList.add("skills-section");
+    } else {
+      sidebar.classList.remove("skills-section");
+    }
+  });
+});
 
 // Slider
 let items = document.querySelectorAll(".projects .slider .list .item");

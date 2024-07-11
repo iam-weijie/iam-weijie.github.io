@@ -71,6 +71,9 @@ html {
 .sidebar ul li:hover .tooltip {
   opacity: 1;
 }
+.sidebar.skills-section ul li .tooltip {
+  color: #181818; /* Change tooltip font color for skills section */
+}
 
 .home {
   width: 100%;
@@ -312,7 +315,7 @@ a,
   opacity: 0;
 }
 .projects .slider .list .item.active .content button {
-  animation: showContent 1s ease-in-out forwards;
+  animation: showContent 0.7s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 .projects .slider .list .item .content button:hover {
