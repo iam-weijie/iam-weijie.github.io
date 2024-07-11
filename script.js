@@ -10,8 +10,10 @@ var typed = new Typed(".typing", {
 let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
 let mainContent = document.querySelector(".main-content");
-// Sidebar stays hidden when first load
-sidebar.classList.toggle("hidden");
+// Sidebar stays hidden when first load on mobile
+if (window.innerWidth <= 768) {
+  sidebar.classList.toggle("hidden");
+}
 btn.onclick = function () {
   sidebar.classList.toggle("hidden");
   mainContent.classList.toggle("shift-right");
