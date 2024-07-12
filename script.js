@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const skillsBottom = skillsSection.getBoundingClientRect().bottom;
 
     if (
-      skillsTop <= window.innerHeight / 2 &&
-      skillsBottom >= window.innerHeight / 2
+      skillsTop <= window.innerHeight / 3 &&
+      skillsBottom >= window.innerHeight / 3
     ) {
       sidebar.classList.add("skills-section");
     } else {

@@ -560,7 +560,7 @@ a,
   .skills .banner .content h1 {
     font-size: 5em;
     text-shadow: none;
-    margin-bottom: 50%;
+    margin-bottom: 40%;
     margin-left: 25%;
   }
   .skills .banner .content h1::after {
@@ -600,7 +600,7 @@ a,
     height: 30px;
   }
   .projects .thumbnail .content {
-    font-size: 13px;
+    font-size: 0;
   }
   .projects .slider .list .item-1 img {
     object-position: 17%;
