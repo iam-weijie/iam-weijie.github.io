@@ -602,6 +602,15 @@ a,
   .projects .thumbnail .content {
     font-size: 13px;
   }
+  .projects .slider .list .item-1 img {
+    object-position: 17%;
+  }
+  .projects .slider .list .item-2 img {
+    object-position: 38%;
+  }
+  .projects .slider .list .item-3 img {
+    object-position: 9%;
+  }
 
   .contact {
     font-size: 12px;
