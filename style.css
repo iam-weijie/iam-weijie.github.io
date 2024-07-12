@@ -548,7 +548,7 @@ a,
   .skills .banner .slider {
     width: 80%;
     height: 80px;
-    top: 10%;
+    top: 24%;
     left: 10%;
   }
   .skills .banner .slider .item {
@@ -560,7 +560,7 @@ a,
   .skills .banner .content h1 {
     font-size: 5em;
     text-shadow: none;
-    margin-bottom: 0;
+    margin-bottom: 50%;
     margin-left: 25%;
   }
   .skills .banner .content h1::after {
@@ -569,10 +569,10 @@ a,
   .skills .banner .content .me {
     width: 100%;
     height: 40vh;
-    bottom: 250%;
+    bottom: 80%;
   }
   .skills .banner .content .crown {
-    margin-bottom: 350%;
+    margin-bottom: 236%;
     margin-left: 15%;
   }
 
