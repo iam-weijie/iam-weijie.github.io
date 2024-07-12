@@ -521,7 +521,7 @@ a,
   }
   .main-content {
     width: 100%;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease;
   }
   .main-content.shift-right {
     width: calc(100% - 50px);
@@ -532,14 +532,17 @@ a,
   .home {
     background-size: contain;
   }
+  .home .content {
+    margin-top: 80%;
+  }
   .home .content .text-1 {
     font-size: 30px;
   }
   .home .content .text-2 {
-    font-size: 37.5px;
+    font-size: 36px;
   }
   .home .content .text-3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .skills .banner .slider {
