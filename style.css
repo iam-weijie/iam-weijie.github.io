@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#btn {
+#menu-btn {
   display: none;
 }
 .logo {
@@ -488,7 +488,7 @@ a,
   }
 }
 @media screen and (max-width: 768px) {
-  #btn {
+  #menu-btn {
     display: block;
     color: #fefefa;
     position: fixed;
@@ -497,6 +497,9 @@ a,
     left: 4%;
     line-height: 50px;
     z-index: 101;
+  }
+  #menu-btn.skills-section {
+    color: #181818;
   }
   .sidebar .top .logo {
     margin-top: 20px;

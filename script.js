@@ -7,35 +7,42 @@ var typed = new Typed(".typing", {
 });
 
 // Sidebar
-let btn = document.querySelector("#btn");
+let menuBtn = document.querySelector("#menu-btn");
 let sidebar = document.querySelector(".sidebar");
 let mainContent = document.querySelector(".main-content");
+let skillsSection = document.querySelector(".skills");
+
 // Sidebar stays hidden when first load on mobile
 if (window.innerWidth <= 768) {
   sidebar.classList.toggle("hidden");
 }
-btn.onclick = function () {
+menuBtn.onclick = function () {
   sidebar.classList.toggle("hidden");
   mainContent.classList.toggle("shift-right");
 };
-// Change tooltip color when in the skills section
-document.addEventListener("DOMContentLoaded", function () {
-  const sidebar = document.querySelector(".sidebar");
-  const skillsSection = document.querySelector(".skills");
-
-  window.addEventListener("scroll", function () {
-    const skillsTop = skillsSection.getBoundingClientRect().top;
-    const skillsBottom = skillsSection.getBoundingClientRect().bottom;
-
-    if (
-      skillsTop <= window.innerHeight / 3 &&
-      skillsBottom >= window.innerHeight / 3
-    ) {
-      sidebar.classList.add("skills-section");
-    } else {
-      sidebar.classList.remove("skills-section");
-    }
-  });
+// Change color when in the skills section
+window.addEventListener("scroll", function () {
+  const skillsTop = skillsSection.getBoundingClientRect().top;
+  const skillsBottom = skillsSection.getBoundingClientRect().bottom;
+  // tooltip color
+  if (
+    skillsTop <= window.innerHeight / 3 &&
+    skillsBottom >= window.innerHeight / 3
+  ) {
+    sidebar.classList.add("skills-section");
+  } else {
+    sidebar.classList.remove("skills-section");
+  }
+  // menu icon color
+  if (
+    skillsTop <= 30 &&
+    skillsBottom >= 30 &&
+    sidebar.classList.contains("hidden")
+  ) {
+    menuBtn.classList.add("skills-section");
+  } else {
+    menuBtn.classList.remove("skills-section");
+  }
 });
 
 // Slider
