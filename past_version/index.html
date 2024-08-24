@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="IIO4ByHKW9kFXCQ5xT6DGaVZDgDp0RiktlAD_GpwGq8"
+    />
+    <title>Weijie's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fefefa;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar" role="navigation">
+      <div class="top">
+        <div class="logo">
+          <a
+            href="https://github.com/iam-weijie/iam-weijie.github.io"
+            target="_blank"
+          >
+            <img src="images/logo.png" class="logo" alt="Weijie Wang" />
+          </a>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#home"> <i class="bx bxs-home"></i></a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#skills"> <i class="bx bxs-user"></i></a>
+          <span class="tooltip">Skills</span>
+        </li>
+        <!--
+        <li>
+          <a href="#experience"> <i class="bx bxs-briefcase-alt-2"></i></a>
+          <span class="tooltip">Experience</span>
+        </li>
+        -->
+        <li>
+          <a href="#projects"> <i class="bx bxs-component"></i></a>
+          <span class="tooltip">Projects</span>
+        </li>
+        <li>
+          <a href="#contact"> <i class="bx bxs-envelope"></i></a>
+          <span class="tooltip">Contact</span>
+        </li>
+      </ul>
+    </div>
+    <i class="bx bx-menu" id="menu-btn"></i>
+
+    <div class="main-content">
+      <!-- home section start -->
+      <section class="home" id="home">
+        <div class="image"></div>
+        <div class="content">
+          <div class="text-1">Hi! My name is</div>
+          <div class="text-2">Weijie Wang</div>
+          <div class="text-3">I'm a <span class="typing"></span></div>
+        </div>
+      </section>
+
+      <!-- skills section start -->
+      <section class="skills" id="skills">
+        <div class="banner">
+          <div class="slider" style="--quantity: 8">
+            <div class="item" style="--position: 8">
+              <img src="images/technologies/python.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 7">
+              <img src="images/technologies/java.webp" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="images/technologies/r.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 5">
+              <img src="images/technologies/javascript.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 4">
+              <img src="images/technologies/html.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 3">
+              <img src="images/technologies/css.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 2">
+              <img src="images/technologies/react.png" alt="Weijie Wang" />
+            </div>
+            <div class="item" style="--position: 1">
+              <img src="images/technologies/aws.webp" alt="Weijie Wang" />
+            </div>
+          </div>
+          <div class="content">
+            <h1 data-content="MY SKILLS">MY SKILLS</h1>
+            <div class="me"></div>
+            <div class="crown"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience section start -->
+      <!--
+      <section class="experience" id="experience"></section>
+    -->
+
+      <!-- project section start -->
+      <section class="projects" id="projects">
+        <div class="slider">
+          <!-- list items -->
+          <div class="list">
+            <div class="item active item-1">
+              <img
+                src="images/projects/corporate_chat_podcast.png"
+                alt="Weijie Wang"
+              />
+              <div class="content">
+                <p>web dev</p>
+                <h2>Corporate Chat Podcast</h2>
+                <p>
+                  A podcast entirely managed by students that focuses on guiding
+                  aspiring finance professionals.
+                </p>
+                <a
+                  href="https://corporatechatpodcast.com/"
+                  target="_blank"
+                  class="btn"
+                  ><button>Go</button></a
+                >
+              </div>
+            </div>
+            <div class="item item-2">
+              <img
+                src="images/projects/donations_tracker.png"
+                alt="Weijie Wang"
+              />
+              <div class="content">
+                <p>web dev</p>
+                <h2>Donations Tracker</h2>
+                <p>
+                  A website that provides a platform for users to efficiently
+                  and effectively share donations in the Greater Montréal area.
+                </p>
+                <a
+                  href="https://donations-tracker.uaem.org/"
+                  target="_blank"
+                  class="btn"
+                  ><button>Go</button></a
+                >
+              </div>
+            </div>
+            <div class="item item-3">
+              <img src="images/projects/face_a_face.png" alt="Weijie Wang" />
+              <div class="content">
+                <p>web design</p>
+                <h2>Face à Face Montréal</h2>
+                <p>
+                  Non-profit community organization dedicated to addressing the
+                  concerns of individuals in need.
+                </p>
+                <a
+                  href="https://faceafacemontreal.org/"
+                  target="_blank"
+                  class="btn"
+                  ><button>Go</button></a
+                >
+              </div>
+            </div>
+            <div class="item item-4">
+              <img src="images/projects/crush.png" alt="Weijie Wang" />
+              <div class="content">
+                <p>web dev</p>
+                <h2>Crush</h2>
+                <p>
+                  What's a better way to confess your feelings? Do it with style
+                  & music! 💖✨
+                </p>
+                <a
+                  href="https://iam-weijie.github.io/crush/confession.html"
+                  target="_blank"
+                  class="btn"
+                  ><button>Go</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- button arrows -->
+          <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+          <!-- thumbnail -->
+          <div class="thumbnail">
+            <div class="item active item-1">
+              <img
+                src="images/projects/corporate_chat_podcast.png"
+                alt="Weijie Wang"
+              />
+              <div class="content">Podcast</div>
+            </div>
+            <div class="item item-2">
+              <img
+                src="images/projects/donations_tracker.png"
+                alt="Weijie Wang"
+              />
+              <div class="content">Donations</div>
+            </div>
+            <div class="item item-3">
+              <img src="images/projects/face_a_face.png" alt="Weijie Wang" />
+              <div class="content">Organization</div>
+            </div>
+            <div class="item item-4">
+              <img src="images/projects/crush.png" alt="Weijie Wang" />
+              <div class="content">Love</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section start -->
+      <section class="contact" id="contact">
+        <div>
+          <h1>Contact Me</h1>
+          <form id="contact-form">
+            <!--Name-->
+            <label for="user_name">Name</label>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              placeholder="Your name..."
+              required
+            />
+            <!--Email-->
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <!--Message-->
+            <label for="message">Message</label>
+            <textarea
+              type="message"
+              id="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
+            <!--Submit Button-->
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+
+          <!--Other ways to reach me-->
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/weijiew/">
+                <i class="bx bxl-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/iam-weijie">
+                <i class="bx bxl-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iam._.weijie/">
+                <i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
