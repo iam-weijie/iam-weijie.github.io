@@ -4149,3 +4149,7 @@ body.is-preload #wrapper {
     transform: none;
   }
 }
+
+#project-link {
+  border: none; /* Remove underline from the link */
+}
