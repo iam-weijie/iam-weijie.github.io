@@ -3,6 +3,8 @@ function sendEmail(e) {
 
   const serviceID = "service_u48x7o7";
   const templateID = "template_zci1a7u";
+  const sendBtn = document.getElementById("send-btn");
+  sendBtn.innerText = "...";
 
   var params = {
     name: document.getElementById("name").value,
@@ -16,8 +18,7 @@ function sendEmail(e) {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
-      console.log(res);
-      alert("Email sent successfully!");
+      sendBtn.innerText = "Sent";
     })
     .catch((err) => console.log(err));
 }
